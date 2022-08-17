@@ -1,0 +1,52 @@
+
+Assignment-Addition-Subtraction Operator Test, equal term count 
+A:  +5x^7 +4x^2
+B:  +7x^5 +2x^4
+A + B = C, which is:  +5x^7 +7x^5 +2x^4 +4x^2
+A - B = D, which is:  +5x^7 -7x^5 -2x^4 +4x^2
+
+Assignment-Addition-Subtraction Operator Test, unequal term count 
+E:  +5x^7
+F:  +3x^7 +9x^4 +12x^2
+E + F = G, which is:  +8x^7 +9x^4 +12x^2
+E - F = H, which is:  +2x^7 -9x^4 -12x^2
+F - E = H2, which is:  -2x^7 +9x^4 +12x^2
+
+Assignment Operator Deep Copy Test 
+I:  +5x^7
+J:  +9x^6
+I:  +5x^7 +83x^2
+J:  +5x^7 +90x^3
+
++= -= Operator Test 
+K:  +2x^4
+L:  +15x^4
+M:  +14x^4
+K -= L:  -13x^4
+K += M:  +1x^4
+
+Multiplication Operator Test
+N:  +1x +1
+O:  +1x^2 +2x +2
+O * N:  +1x^3 +3x^2 +4x +2
+
+N2:  +1x^2 +2
+O2:  +1x^2 +2
+O2 * N2:  +1x^4 +4x^2 +4
+
+*= Operator Test
+Q *= P:  +1x^3 +3x^2 +4x +2
+
+Assignment Operator Deep Copy Test 
+R:  +5x^7
+S:  +5x^7
+R:  +5x^7 +90x^3 +83x^2
+S:  +5x^7 +24x^4
+
+Invalid Input Testing 
+Default initialization: T = {0}
+T.setCoeff(20, -10): 0
+T.setCoeff(-10, -1): 0
+T.getCoeff(1): 0
+T.getCoeff(-1): 0
+Poly U(7, -1), output:  +7
